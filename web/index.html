@@ -10,6 +10,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="super_uber">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <meta name="google-signin-client_id" content="53249177524-i2hvvtgqgtmnhspgkacifg7d3stca375.apps.googleusercontent.com">
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/png" href="favicon.png"/>
@@ -28,8 +29,10 @@
       });
     }
   </script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
   <script src="main.dart.js" type="application/javascript"></script>
-  <script src="https://www.gstatic.com/firebasejs/7.15.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-auth.js"></script>
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
   <script>
     // Your web app's Firebase configuration
     var firebaseConfig = {
@@ -44,7 +47,6 @@
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
   </script>
 </body>
 </html>
