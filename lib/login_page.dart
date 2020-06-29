@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:super_uber/sign_in.dart';
 import 'first_screen.dart';
+import 'map.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -36,7 +37,7 @@ class _LoginPageState extends State<LoginPage> {
           Navigator.of(context).push(
             MaterialPageRoute(
               builder: (context) {
-                return FirstScreen();
+                return Map();
               },
             ),
           );
